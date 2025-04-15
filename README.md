@@ -21,6 +21,12 @@ This README includes commonly used bit manipulation tricks, formulas, and CP uti
 | `x & ~(1 << k)` | Clear the **k-th bit** |
 | `x | (1 << k)` | Set the **k-th bit** |
 
+
+
+## check if the ith bit is set
+### (x >> i) & 1   // OR
+### x & (1 << i)
+
 ---
 
 ## 🧠 Bit Tricks and Built-ins
@@ -47,6 +53,3 @@ for (int sub = mask; sub; sub = (sub - 1) & mask) {
 }
 
 
-## check if the ith bit is set
-### (x >> i) & 1   // OR
-### x & (1 << i)
